@@ -1,0 +1,23 @@
+# Local previews, editor state, and operating-system files
+.local/
+.DS_Store
+._*
+.vscode/
+.idea/
+*.log
+*.tmp
+*~
+__pycache__/
+
+# Credentials never belong in the website repository
+.env
+.env.*
+!.env.example
+
+# Application drafts and source manuscripts stay outside this repository
+*.docx
+*.gdoc
+*.gsheet
+*.key
+*.pptx
+*.mov
