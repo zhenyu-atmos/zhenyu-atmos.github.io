@@ -30,9 +30,9 @@ Open <http://127.0.0.1:8000/> and refresh after edits. Stop the server with Cont
 
 This directory is its own Git repository on `main`. The parent application workspace is outside this repository. Its remote points to the planned GitHub repository; nothing has been uploaded.
 
-The chosen address is `zhenyu-atmos.github.io`. The GitHub account or organization must be named `zhenyu-atmos`, and the repository must be named `zhenyu-atmos.github.io`. A free organization owned by the existing account avoids changing the current login. The organization and remote repository still need to be created.
+The chosen address is `zhenyu-atmos.github.io`. The GitHub account or organization must be named `zhenyu-atmos`, and the repository must be named `zhenyu-atmos.github.io`. A free organization owned by the existing account avoids changing the current login. The organization and empty public repository now exist. The website and CV have not been uploaded.
 
-After creating or accessing the matching organization, create an empty public repository named `zhenyu-atmos.github.io`. The local remote is already configured, so upload with:
+The repository is <https://github.com/zhenyu-atmos/zhenyu-atmos.github.io>. The local remote is already configured. To upload the prepared website and public CV:
 
 ```bash
 git push -u origin main
