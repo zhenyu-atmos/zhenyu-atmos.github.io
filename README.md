@@ -28,19 +28,13 @@ Open <http://127.0.0.1:8000/> and refresh after edits. Stop the server with Cont
 
 ## Git and GitHub Pages
 
-This directory is its own Git repository on `main`. The parent application workspace is outside this repository. Its remote points to the planned GitHub repository; nothing has been uploaded.
+This directory is its own Git repository on `main`. The parent application workspace is outside this repository.
 
-The chosen address is `zhenyu-atmos.github.io`. The GitHub account or organization must be named `zhenyu-atmos`, and the repository must be named `zhenyu-atmos.github.io`. A free organization owned by the existing account avoids changing the current login. The organization and empty public repository now exist. The website and CV have not been uploaded.
+Repository: <https://github.com/zhenyu-atmos/zhenyu-atmos.github.io>
 
-The repository is <https://github.com/zhenyu-atmos/zhenyu-atmos.github.io>. The local remote is already configured. To upload the prepared website and public CV:
+Website: <https://zhenyu-atmos.github.io/>
 
-```bash
-git push -u origin main
-```
-
-In the GitHub repository, select **Settings → Pages → Deploy from a branch → main → /(root) → Save**. Only the website files and public CV belong in this repository.
-
-The intended public address is <https://zhenyu-atmos.github.io/>.
+GitHub Pages publishes the root of the `main` branch. The organization is managed through the existing personal GitHub login. Only website files and the public CV belong in this repository.
 
 [GitHub Pages documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages).
 
