@@ -1,78 +1,67 @@
 # Zhenyu You's academic website
 
-A small, responsive academic website with a black background and a monochrome palette. It uses plain HTML and CSS, with no build step or package installation.
+Five simple pages with a dark background, concise text, and a shared navigation bar. Plain HTML and CSS; no build tools or dependencies.
 
 ## Editing
 
-- `index.html` contains the biography, research descriptions, publications, education, and contact details. Comments identify the main editing points.
-- `styles.css` contains the layout, fonts, spacing, mobile styles, and color variables at the top of the file.
-- `assets/CV_ZhenyuYou.pdf` is the public CV. Replace this copy when updating the CV; the original application materials remain outside this repository.
-- `favicon.svg` is the browser-tab icon.
-- `.nojekyll` tells GitHub Pages to serve these static files directly.
+| File | Content |
+| --- | --- |
+| `index.html` | Home and short biography |
+| `publications/index.html` | Journal articles and preprints |
+| `research/index.html` | One page listing research topics |
+| `cv/index.html` | CV link and education |
+| `resources/index.html` | Space for useful website links |
+| `styles.css` | Shared colors, type, spacing, and mobile layout |
+| `assets/CV_ZhenyuYou.pdf` | Public CV copy |
 
-Only put material intended for the public website in this repository.
+The Resources page includes a commented example showing how to add links. Navigation is repeated in each HTML file so there is no build step.
 
-## Local preview
+## Preview
 
-Open `index.html` directly in a browser, or run the following from this directory:
+Open `index.html` directly, or run this command inside the website directory:
 
 ```bash
 python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
-Then open <http://127.0.0.1:8000>. Refresh the page after editing. Stop the server with Control-C.
+Open <http://127.0.0.1:8000/> and refresh after edits. Stop the server with Control-C.
 
-## First upload to GitHub
+## Git and GitHub Pages
 
-The local Git repository is already initialized on `main`. Create an **empty public repository** named `zyou2998.github.io` in the `zyou2998` GitHub account. Do not add a README, license, or gitignore on GitHub, because this local repository already has its own files and history.
+This directory is its own Git repository on `main`. The parent application workspace is outside this repository. Its remote points to the planned GitHub repository; nothing has been uploaded.
 
-Authenticate if necessary:
+The chosen address is `zhenyu-atmos.github.io`. The GitHub account or organization must be named `zhenyu-atmos`, and the repository must be named `zhenyu-atmos.github.io`. A free organization owned by the existing account avoids changing the current login. The organization and remote repository still need to be created.
 
-```bash
-gh auth login --hostname github.com --web --git-protocol https
-```
-
-With GitHub CLI, create and push the repository in one step, provided it does not already exist:
+After creating or accessing the matching organization, create an empty public repository named `zhenyu-atmos.github.io`. The local remote is already configured, so upload with:
 
 ```bash
-gh repo create zyou2998/zyou2998.github.io --public --source=. --remote=origin --push
-```
-
-If you created the empty repository using the GitHub website instead, connect and push with:
-
-```bash
-git remote add origin https://github.com/zyou2998/zyou2998.github.io.git
 git push -u origin main
 ```
 
-Enable hosting in the repository's **Settings → Pages**:
+In the GitHub repository, select **Settings → Pages → Deploy from a branch → main → /(root) → Save**. Only the website files and public CV belong in this repository.
 
-1. Select **Deploy from a branch**.
-2. Select **main** and **/(root)**.
-3. Click **Save**.
+The intended public address is <https://zhenyu-atmos.github.io/>.
 
-The website address will be <https://zyou2998.github.io/> once GitHub Pages finishes publishing.
-
-GitHub documentation: [Uploading a local repository](https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github) and [configuring GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+[GitHub Pages documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages).
 
 ## Routine updates
 
-After editing and previewing, review the changes and publish:
+After editing and previewing, run:
 
 ```bash
 git status
 git diff
-git add index.html styles.css assets/CV_ZhenyuYou.pdf
+git add index.html publications/index.html research/index.html cv/index.html resources/index.html styles.css assets/CV_ZhenyuYou.pdf
 git commit -m "Update website"
 git push
 ```
 
-Stage any additional files explicitly when you add them. GitHub Pages republishes after changes are pushed to its publishing branch. Before editing on another computer, run `git pull --ff-only` to get the latest committed version.
+Stage any new assets explicitly. GitHub Pages republishes when the configured publishing branch changes. Run `git pull --ff-only` before working on another computer.
 
-## Content sources
+## Sources
 
-The initial biography, affiliation, education, contact details, and publication metadata were prepared from the candidate-provided `CV_ZhenyuYou_updated.pdf`. The public CV is an unchanged copy of that document.
+Biography, affiliation, education, contact information, and publication metadata follow the candidate-provided `CV_ZhenyuYou_updated.pdf`. The website's CV is an unchanged copy. Preprints are identified separately from journal articles.
 
-The research descriptions were grounded in the candidate's first-author papers and manuscripts, including `You_Deng_2023.pdf`, `You_etal_2024.pdf`, `You_Deng_2025.pdf`, `manuscript_ZY_PL_YM_HZ_SP.md`, and `manuscript_ERL_final.md`. Source manuscripts and application drafts are not part of this website repository.
+Research topics were grounded in `You_Deng_2023.pdf`, `You_etal_2024.pdf`, `You_Deng_2025.pdf`, `manuscript_ERL_final.md`, and `manuscript_ZY_PL_YM_HZ_SP.md`. Application drafts and source manuscripts remain outside this repository.
 
-The three selected published papers link to their DOI records. The CV contains the full publication list, including preprints. No portrait or social profile links were invented.
+The visual and writing style was inspired by [Serena Scholz's website](https://serenarscholz.github.io/). Its personal claims and assets were not copied.
