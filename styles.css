@@ -2,9 +2,9 @@
 :root {
   color-scheme: dark;
   --background: #161616;
-  --text: #d2d2d2;
+  --text: #e8e8e8;
   --heading: #f0f0f0;
-  --link: #b8b8ee;
+  --link: #2798ba;
   --muted: #aaa;
   --line: #666;
   --surface: #202020;
@@ -12,9 +12,9 @@
 :root[data-theme="light"] {
   color-scheme: light;
   --background: #fff;
-  --text: #30343b;
+  --text: #111;
   --heading: #1b1f24;
-  --link: #4b4fa5;
+  --link: #b507ac;
   --muted: #626871;
   --line: #c4c7cd;
   --surface: #f1f3f6;
@@ -54,6 +54,8 @@ ul, ol { padding-left: 24px; }
 .research-intro { max-width: 790px; margin-bottom: 40px; }
 .research-project + .research-project { margin-top: 42px; padding-top: 42px; border-top: 1px dashed var(--line); }
 .research-project h2 { margin: 0 0 24px; font-size: 23px; line-height: 1.45; }
+.research-project .project-news-title { margin-bottom: 10px; }
+.project-news { margin: 0 0 24px; font-size: 14px; line-height: 1.65; }
 .project-body { display: flow-root; }
 .project-body > p:last-child { margin-bottom: 0; }
 .project-description { min-width: 0; }
@@ -67,7 +69,7 @@ ul, ol { padding-left: 24px; }
 .research-project figure a { display: block; }
 .research-project figure a:hover { opacity: .92; }
 .research-project img { display: block; width: 100%; height: auto; background: #fff; }
-.research-project figcaption { margin-top: 9px; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.research-project figcaption { margin-top: 9px; color: var(--text); font-size: 12px; line-height: 1.6; }
 .figure-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; gap: 14px; }
 .research-project .figure-pair a { position: relative; aspect-ratio: 19 / 20; background: #fff; }
 .research-project .figure-pair img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: center top; }
@@ -84,6 +86,7 @@ ul, ol { padding-left: 24px; }
 .project-papers li + li { margin-top: 9px; }
 .publication-list { margin: 0; padding: 0; list-style: none; font-size: 15px; line-height: 1.85; }
 .publication-list li { margin-bottom: 24px; }
+.publication-list a, .project-papers a { color: inherit; }
 .plain-list li { margin-bottom: 12px; }
 .resources-wrapper { max-width: 1040px; }
 .resource-section + .resource-section { margin-top: 34px; padding-top: 28px; border-top: 1px dashed var(--line); }
