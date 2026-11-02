@@ -87,6 +87,10 @@ ul, ol { padding-left: 24px; }
 .publication-list { margin: 0; padding: 0; list-style: none; font-size: 15px; line-height: 1.85; }
 .publication-list li { margin-bottom: 24px; }
 .publication-list a, .project-papers a { color: inherit; }
+a[href$=".pdf"] { color: var(--link); }
+.publication-year { color: var(--link); }
+.publication-list .paper-title { font-weight: 700; }
+.publication-list .publication-author { text-decoration: underline; text-underline-offset: 3px; }
 .plain-list li { margin-bottom: 12px; }
 .resources-wrapper { max-width: 1040px; }
 .resource-section + .resource-section { margin-top: 34px; padding-top: 28px; border-top: 1px dashed var(--line); }
@@ -109,7 +113,7 @@ ul, ol { padding-left: 24px; }
 .profile h1 { margin-bottom: 12px; font-size: 28px; letter-spacing: -.5px; }
 .profile-role { margin: 0 0 20px; color: var(--muted); font-size: 14px; line-height: 1.7; }
 .social-links { display: grid; gap: 6px; margin: 0; padding: 0; list-style: none; font-size: 14px; }
-.social-links a { display: inline-flex; align-items: center; gap: 11px; min-height: 32px; }
+.social-links a { display: inline-flex; align-items: center; gap: 11px; min-height: 32px; color: var(--text); }
 .social-links svg { flex: 0 0 19px; width: 19px; height: 19px; }
 .home-content { min-width: 0; }
 .introduction p:last-child { margin-bottom: 0; }

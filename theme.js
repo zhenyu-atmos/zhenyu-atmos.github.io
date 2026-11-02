@@ -16,15 +16,33 @@
     }
   }
 
-  let preference = "dark";
-  try {
-    preference = localStorage.getItem(storageKey) === "light" ? "light" : "dark";
-  } catch {
-    // The toggle still works when browser storage is unavailable.
+  function readPreference() {
+    try {
+      return localStorage.getItem(storageKey) === "light" ? "light" : "dark";
+    } catch {
+      return root.dataset.theme === "light" ? "light" : "dark";
+    }
   }
-  applyTheme(preference);
+
+  applyTheme(readPreference());
+
+  function updateNavigationVersion() {
+    const stylesheet = document.querySelector('link[rel="stylesheet"]');
+    if (!stylesheet) return;
+    const version = new URL(stylesheet.href).searchParams.get("v");
+    if (!version) return;
+
+    // Avoid reusing pages cached before the current shared styles were published.
+    document.querySelectorAll("nav a[href]").forEach((link) => {
+      const destination = new URL(link.href);
+      if (destination.origin !== location.origin) return;
+      destination.searchParams.set("v", version);
+      link.href = destination.href;
+    });
+  }
 
   function initializeToggle() {
+    updateNavigationVersion();
     const button = document.querySelector(".theme-toggle");
     if (!button) return;
     applyTheme(root.dataset.theme);
@@ -50,5 +68,10 @@
     if (event.key === storageKey || event.key === null) {
       applyTheme(event.newValue === "light" ? "light" : "dark");
     }
+  });
+
+  window.addEventListener("pageshow", () => applyTheme(readPreference()));
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible") applyTheme(readPreference());
   });
 })();
