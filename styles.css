@@ -64,8 +64,8 @@ ul, ol { padding-left: 24px; }
 .project-papers h3 { margin: 0 0 9px; color: var(--heading); font-size: 14px; font-weight: 600; }
 .project-papers ul { margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.75; }
 .project-papers li + li { margin-top: 9px; }
-.publication-list { margin: 0; font-size: 15px; line-height: 1.85; }
-.publication-list li { padding-left: 5px; margin-bottom: 24px; }
+.publication-list { margin: 0; padding: 0; list-style: none; font-size: 15px; line-height: 1.85; }
+.publication-list li { margin-bottom: 24px; }
 .plain-list li { margin-bottom: 12px; }
 .home-wrapper { max-width: 1040px; }
 .home-layout { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 56px; padding-top: 42px; }
