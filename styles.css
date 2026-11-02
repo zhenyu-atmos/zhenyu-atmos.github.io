@@ -67,6 +67,25 @@ ul, ol { padding-left: 24px; }
 .publication-list { margin: 0; padding: 0; list-style: none; font-size: 15px; line-height: 1.85; }
 .publication-list li { margin-bottom: 24px; }
 .plain-list li { margin-bottom: 12px; }
+.resources-wrapper { max-width: 1040px; }
+.resource-symbols { position: absolute; overflow: hidden; pointer-events: none; }
+.resource-section { --resource-accent: #b8b8ee; }
+.resource-section + .resource-section { margin-top: 34px; padding-top: 28px; border-top: 1px dashed var(--line); }
+.resource-section h2 { margin: 0 0 16px; }
+.resource-section[aria-labelledby="visuals-heading"] { --resource-accent: #a4c9e8; }
+.resource-section[aria-labelledby="data-heading"] { --resource-accent: #9fcfc3; }
+.resource-section[aria-labelledby="models-heading"] { --resource-accent: #ddc098; }
+.resource-section[aria-labelledby="others-heading"] { --resource-accent: #c5b5d8; }
+.resource-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 8px 16px; margin: 0; padding: 0; list-style: none; }
+.resource-grid li { min-width: 0; }
+.resource-link { display: flex; flex-direction: column; align-items: center; gap: 10px; min-height: 112px; padding: 12px 5px; border-radius: 10px; text-align: center; }
+.resource-link:hover { background: #202020; text-decoration: none; }
+.resource-link:hover .resource-title { color: var(--heading); }
+.resource-icon { display: grid; place-items: center; width: 54px; height: 54px; border: 1px solid #383838; border-radius: 14px; background: #222; color: var(--resource-accent); }
+.resource-icon svg { width: 28px; height: 28px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.resource-title { max-width: 100%; color: var(--text); font-size: 13px; line-height: 1.45; overflow-wrap: anywhere; }
+@media (max-width: 800px) { .resource-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (max-width: 480px) { .resource-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; } }
 .home-wrapper { max-width: 1040px; }
 .home-layout { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 56px; padding-top: 42px; }
 .profile { min-width: 0; }

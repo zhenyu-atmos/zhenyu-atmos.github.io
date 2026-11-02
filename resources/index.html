@@ -11,25 +11,350 @@
     <link rel="stylesheet" href="../styles.css">
   </head>
   <body>
+    <svg class="resource-symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="0" height="0">
+      <defs>
+        <symbol id="resource-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18M5 6.5h14M5 17.5h14"/></symbol>
+        <symbol id="resource-cyclone" viewBox="0 0 24 24"><path d="M19.5 4.5c-5-2-10 .5-11.5 4.5-1.6 4.5 2 7.5 5 6.5 3-1 3-5 0-6-3-1-6.5 2-5 6.5 1 3 4.5 5 8 4.5M4.5 19.5c5 2 10-.5 11.5-4.5 1.6-4.5-2-7.5-5-6.5"/></symbol>
+        <symbol id="resource-radar" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><path d="m12 12 6.5-6.5M12 3v2M3 12h2M12 19v2M19 12h2"/><circle cx="8" cy="14" r="1" fill="currentColor" stroke="none"/></symbol>
+        <symbol id="resource-storm" viewBox="0 0 24 24"><path d="M6 15a4 4 0 0 1-1-7.9A6 6 0 0 1 16.5 6 4.5 4.5 0 0 1 18 15h-2M12 12l-4 6h4l-2 4 6-7h-4l2-3"/></symbol>
+        <symbol id="resource-chart" viewBox="0 0 24 24"><path d="M4 3v17h17M7 14l4-5 4 3 5-7M17 5h3v3"/></symbol>
+        <symbol id="resource-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18M7 14h3M14 14h3M7 17h3"/></symbol>
+        <symbol id="resource-waves" viewBox="0 0 24 24"><path d="M2 6c3-4 5 4 8 0s5 4 8 0 4 0 4 0M2 12c3-4 5 4 8 0s5 4 8 0 4 0 4 0M2 18c3-4 5 4 8 0s5 4 8 0 4 0 4 0"/></symbol>
+        <symbol id="resource-satellite" viewBox="0 0 24 24"><path d="m10 7 7 7-3 3-7-7zM3 6l3-3 4 4-3 3zM14 17l3-3 4 4-3 3zM4 14a6 6 0 0 0 6 6M5 11a9 9 0 0 0 8 8M17 7l4-4M18 3h3v3"/></symbol>
+        <symbol id="resource-wind" viewBox="0 0 24 24"><path d="M3 8h11a3 3 0 1 0-3-3M2 12h17a3 3 0 1 0-3-3M4 16h9a3 3 0 1 1-3 3"/></symbol>
+        <symbol id="resource-flame" viewBox="0 0 24 24"><path d="M12 2c1 6-5 6-5 11-2-1-2-3-2-3-3 7 1 12 7 12 6 0 10-6 6-12 0 3-2 3-2 3 1-5-1-8-4-11Z"/></symbol>
+        <symbol id="resource-map" viewBox="0 0 24 24"><path d="m3 5 6-2 6 2 6-2v16l-6 2-6-2-6 2zM9 3v16M15 5v16"/></symbol>
+        <symbol id="resource-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+        <symbol id="resource-rain" viewBox="0 0 24 24"><path d="M6 13a4 4 0 0 1-.8-7.9A5.5 5.5 0 0 1 15.5 4 4.5 4.5 0 0 1 18 13H6ZM7 17l-1 3M12 17l-1 3M17 17l-1 3"/></symbol>
+        <symbol id="resource-code" viewBox="0 0 24 24"><path d="m8 5-6 7 6 7M16 5l6 7-6 7M14 3l-4 18"/></symbol>
+        <symbol id="resource-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5"/></symbol>
+        <symbol id="resource-track" viewBox="0 0 24 24"><path d="M4 19c10 0-1-11 8-11h5"/><circle cx="4" cy="19" r="2"/><circle cx="12" cy="8" r="2"/><path d="m17 4 4 4-4 4"/></symbol>
+        <symbol id="resource-book" viewBox="0 0 24 24"><path d="M12 5C9 3 5 3 2 4v15c3-1 7-1 10 1 3-2 7-2 10-1V4c-3-1-7-1-10 1Zm0 0v15M5 8h4M5 12h4M15 8h4M15 12h4"/></symbol>
+        <symbol id="resource-domain" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><rect x="7" y="7" width="11" height="11" rx="1"/><rect x="11" y="11" width="5" height="5" rx=".5"/></symbol>
+        <symbol id="resource-mesh" viewBox="0 0 24 24"><path d="m8 2 8 0 5 7-3 10-10 3-6-8 6-12ZM8 2l4 9 9-2M12 11l6 8M12 11l-4 11M2 14l10-3"/></symbol>
+        <symbol id="resource-layers" viewBox="0 0 24 24"><path d="m12 2 10 6-10 6L2 8Zm-10 10 10 6 10-6M2 17l10 6 10-6"/></symbol>
+        <symbol id="resource-wave" viewBox="0 0 24 24"><path d="M2 12c4-14 6-14 10 0s6 14 10 0M2 12h20"/></symbol>
+        <symbol id="resource-building" viewBox="0 0 24 24"><path d="m2 8 10-6 10 6H2ZM4 21h16M6 8v10M12 8v10M18 8v10M3 18h18v3"/></symbol>
+        <symbol id="resource-rings" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="7" ry="9"/><path d="M12 3v18"/></symbol>
+      </defs>
+    </svg>
     <a class="skip-link" href="#main">Skip to content</a>
-    <div class="wrapper">
+    <div class="wrapper resources-wrapper">
       <header>
         <nav aria-label="Main navigation">
-        <a href="../">home</a>
-        <a href="../publications/">publications</a>
-        <a href="../research/">research</a>
-        <a href="../cv/">cv</a>
-        <a href="../resources/" aria-current="page">resources</a>
+          <a href="../">Home</a>
+          <a href="../research/">Research</a>
+          <a href="../publications/">Publications</a>
+          <a href="../resources/" aria-current="page">Resources</a>
         </nav>
       </header>
       <main id="main">
         <h1>Resources</h1>
-        <p>Useful websites will be added here.</p>
-        <!-- Add links below, for example:
-        <ul>
-          <li><a href="https://example.com">Website name</a></li>
-        </ul>
-        -->
+        <section class="resource-section" aria-labelledby="monitoring-heading">
+          <h2 id="monitoring-heading">Monitoring &amp; Forecasts</h2>
+          <ul class="resource-grid" role="list">
+            <li>
+              <a class="resource-link" href="https://climatereanalyzer.org" title="Climate Reanalyzer" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-globe"></use></svg></span>
+                <span class="resource-title">Climate Reanalyzer</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://www.tropicaltidbits.com" title="Tropical Tidbits" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-cyclone"></use></svg></span>
+                <span class="resource-title">Tropical Tidbits</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://www.weathernerds.org" title="Weathernerds" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-radar"></use></svg></span>
+                <span class="resource-title">Weathernerds</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://www.spc.noaa.gov" title="NOAA Storm Prediction Center" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-storm"></use></svg></span>
+                <span class="resource-title">SPC</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://www.cpc.ncep.noaa.gov" title="NOAA Climate Prediction Center" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-chart"></use></svg></span>
+                <span class="resource-title">CPC</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://climate.copernicus.eu/charts/packages/c3s_seasonal/" title="Copernicus seasonal forecast charts" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-calendar"></use></svg></span>
+                <span class="resource-title">C3S Seasonal</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://www.cpc.ncep.noaa.gov/products/CFSv2/CFSv2seasonal.shtml" title="Climate Forecast System version 2 seasonal forecasts" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-calendar"></use></svg></span>
+                <span class="resource-title">CFSv2</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://www.bom.gov.au/climate/ocean/" title="Bureau of Meteorology ocean monitoring and forecasts" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-waves"></use></svg></span>
+                <span class="resource-title">BoM Oceans</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://ncics.org/portfolio/monitor/" title="North Carolina Institute for Climate Studies monitoring tools" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-chart"></use></svg></span>
+                <span class="resource-title">NCICS Monitor</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="resource-section" aria-labelledby="visuals-heading">
+          <h2 id="visuals-heading">Visuals</h2>
+          <ul class="resource-grid" role="list">
+            <li>
+              <a class="resource-link" href="https://satlib.cira.colostate.edu" title="CIRA Satellite Library" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-satellite"></use></svg></span>
+                <span class="resource-title">CIRA SatLib</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://tcatlas.org/index.html" title="Tropical Cyclone Analysis Tool for Live and Archived Structure" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-cyclone"></use></svg></span>
+                <span class="resource-title">TC-ATLAS</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://agc.atmos.uw.edu" title="The Atmospheric General Circulation" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-wind"></use></svg></span>
+                <span class="resource-title">AGC</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://science.nasa.gov/earth/earth-observatory/" title="NASA Earth Observatory" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-globe"></use></svg></span>
+                <span class="resource-title">NASA EO</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://app.watchduty.org" title="Watch Duty wildfire map" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-flame"></use></svg></span>
+                <span class="resource-title">Watch Duty</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://earth.nullschool.net" title="Earth Nullschool wind and weather visualization" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-wind"></use></svg></span>
+                <span class="resource-title">Nullschool</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://era-explorer.climate.copernicus.eu/?lat=42.20&amp;lng=-71.15&amp;plot=0" title="Copernicus ERA Explorer" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-map"></use></svg></span>
+                <span class="resource-title">ERA Explorer</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="resource-section" aria-labelledby="data-heading">
+          <h2 id="data-heading">Data</h2>
+          <ul class="resource-grid" role="list">
+            <li>
+              <a class="resource-link" href="https://psl.noaa.gov/data/gridded/" title="NOAA Physical Sciences Laboratory gridded data" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-database"></use></svg></span>
+                <span class="resource-title">PSL Data</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://psl.noaa.gov/data/climateindices/list/" title="NOAA PSL climate indices" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-chart"></use></svg></span>
+                <span class="resource-title">Climate Indices</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://www.bom.gov.au/climate/mjo/" title="Bureau of Meteorology Madden-Julian Oscillation" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-cyclone"></use></svg></span>
+                <span class="resource-title">BoM MJO</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://cds.climate.copernicus.eu/datasets" title="Copernicus Climate Data Store" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-database"></use></svg></span>
+                <span class="resource-title">CDS</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://psl.noaa.gov/data/gridded/data.cpc.globalprecip.html" title="CPC global precipitation data" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-rain"></use></svg></span>
+                <span class="resource-title">CPC Precip</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://codes.ecmwf.int/grib/param-db/?filter=grib1" title="ECMWF GRIB parameter database" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-code"></use></svg></span>
+                <span class="resource-title">GRIB Parameters</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://disc.gsfc.nasa.gov/datasets/GPM_3IMERGHH_07/summary?keywords=%22IMERG%20final%22" title="GPM IMERG Final half-hourly precipitation, version 07" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-rain"></use></svg></span>
+                <span class="resource-title">IMERG</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://disc.gsfc.nasa.gov/datasets/GPM_MERGIR_1/summary" title="NASA merged geostationary infrared brightness temperatures" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-satellite"></use></svg></span>
+                <span class="resource-title">MERGIR</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://aeronet.gsfc.nasa.gov" title="NASA Aerosol Robotic Network" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-sun"></use></svg></span>
+                <span class="resource-title">AERONET</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://www.ncei.noaa.gov/products/climate-data-records/precipitation-cmorph" title="NOAA CMORPH precipitation climate data record" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-rain"></use></svg></span>
+                <span class="resource-title">CMORPH</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://www.nhc.noaa.gov/gis/archive_besttrack.php" title="National Hurricane Center best-track GIS archive" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-track"></use></svg></span>
+                <span class="resource-title">NHC Best Track</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Aeolus" title="ESA Aeolus wind mission" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-satellite"></use></svg></span>
+                <span class="resource-title">Aeolus</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://www.earthdata.nasa.gov/data/platforms/space-based-platforms/cygnss" title="NASA Cyclone Global Navigation Satellite System" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-satellite"></use></svg></span>
+                <span class="resource-title">CYGNSS</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://www.earthdata.nasa.gov/about/competitive-programs/measures/multi-scale-ultra-high-resolution" title="NASA Multi-scale Ultra-high Resolution sea surface temperature" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-waves"></use></svg></span>
+                <span class="resource-title">MUR SST</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="resource-section" aria-labelledby="models-heading">
+          <h2 id="models-heading">Models</h2>
+          <ul class="resource-grid" role="list">
+            <li>
+              <a class="resource-link" href="https://www2.mmm.ucar.edu/wrf/OnLineTutorial/" title="Weather Research and Forecasting model online tutorial" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-book"></use></svg></span>
+                <span class="resource-title">WRF Tutorial</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://jiririchter.github.io/WRFDomainWizard/" title="WRF Domain Wizard" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-domain"></use></svg></span>
+                <span class="resource-title">WRF Domains</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://www2.mmm.ucar.edu/projects/mpas/tutorial/Virtual2025/" title="Model for Prediction Across Scales 2025 virtual tutorial" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-mesh"></use></svg></span>
+                <span class="resource-title">MPAS Tutorial</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://ncar.github.io/CESM-Tutorial/README.html" title="Community Earth System Model tutorial" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-globe"></use></svg></span>
+                <span class="resource-title">CESM Tutorial</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://www.gfdl.noaa.gov/spear/" title="GFDL Seamless system for Prediction and EArth system Research" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-layers"></use></svg></span>
+                <span class="resource-title">SPEAR</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://execlim.github.io/IscaWebsite/about.html" title="Isca atmospheric modeling framework" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-layers"></use></svg></span>
+                <span class="resource-title">Isca</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://sites.google.com/view/faq-about-lbm/" title="Linear Baroclinic Model FAQ" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-wind"></use></svg></span>
+                <span class="resource-title">LBM</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://github.com/zyou2998/QG_models" title="Zhenyu You’s one-layer quasigeostrophic barotropic model" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-wave"></use></svg></span>
+                <span class="resource-title">Barotropic QG</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="resource-section" aria-labelledby="others-heading">
+          <h2 id="others-heading">Others</h2>
+          <ul class="resource-grid" role="list">
+            <li>
+              <a class="resource-link" href="https://climate.copernicus.eu" title="Copernicus Climate Change Service" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-globe"></use></svg></span>
+                <span class="resource-title">C3S</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://www.metoffice.gov.uk" title="UK Met Office" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-storm"></use></svg></span>
+                <span class="resource-title">Met Office</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://ccrs.weather.gov.sg/index/" title="Centre for Climate Research Singapore" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-building"></use></svg></span>
+                <span class="resource-title">CCRS</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://www.mss-int.sg/v3-climate-projections" title="Singapore V3 climate projections" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-chart"></use></svg></span>
+                <span class="resource-title">SG V3</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://www.weather.gov.sg/climate-annual-climate-reports/" title="Singapore annual climate reports" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-book"></use></svg></span>
+                <span class="resource-title">SG Reports</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://www.climate.gov/news-features" title="NOAA Climate.gov news and features" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-globe"></use></svg></span>
+                <span class="resource-title">Climate.gov</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://www.atmos.colostate.edu/~davet/ao/" title="David Thompson’s Annular Modes website" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-rings"></use></svg></span>
+                <span class="resource-title">Annular Modes</span>
+              </a>
+            </li>
+            <li>
+              <a class="resource-link" href="https://blogs.reading.ac.uk/weather-and-climate-at-reading/" title="Weather and Climate at Reading blog" target="_blank" rel="noopener noreferrer">
+                <span class="resource-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><use href="#resource-book"></use></svg></span>
+                <span class="resource-title">Reading Blog</span>
+              </a>
+            </li>
+          </ul>
+        </section>
       </main>
       <footer>
         <span>© 2026 Zhenyu You</span>
