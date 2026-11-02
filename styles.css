@@ -32,12 +32,41 @@ h2 { margin: 34px 0 18px; color: var(--heading); font-size: 20px; font-weight: 6
 p { margin: 0 0 22px; }
 strong { color: var(--heading); font-weight: 600; }
 ul, ol { padding-left: 24px; }
-.research-list { margin: 26px 0 0; }
-.research-list li { margin-bottom: 21px; padding-left: 4px; }
+.research-wrapper { max-width: 1120px; }
+.research-intro { max-width: 790px; margin-bottom: 40px; }
+.research-project + .research-project { margin-top: 42px; padding-top: 42px; border-top: 1px dashed var(--line); }
+.research-project h2 { margin: 0 0 24px; font-size: 23px; line-height: 1.45; }
+.project-body { display: flow-root; }
+.project-body > p:last-child { margin-bottom: 0; }
+.project-description { min-width: 0; }
+.project-description h3 { margin: 0 0 14px; color: var(--heading); font-size: 17px; font-weight: 600; line-height: 1.5; }
+.project-description p:last-child { margin-bottom: 0; }
+.project-figures { display: grid; gap: 22px; min-width: 0; }
+.research-project figure { min-width: 0; margin: 0; }
+.research-project .figure-inset { width: 44%; }
+.research-project .figure-inset-right { float: right; margin: 4px 0 12px 34px; }
+.research-project .figure-inset-left { float: left; margin: 4px 34px 12px 0; }
+.research-project figure a { display: block; }
+.research-project figure a:hover { opacity: .92; }
+.research-project img { display: block; width: 100%; height: auto; background: #fff; }
+.research-project figcaption { margin-top: 9px; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.figure-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; gap: 14px; }
+.research-project .figure-pair a { position: relative; aspect-ratio: 19 / 20; background: #fff; }
+.research-project .figure-pair img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: center top; }
+.research-project .maritime-figures { width: 52%; }
+.maritime-plot-pair { grid-template-columns: minmax(0, 1.222222fr) minmax(0, 1.700688fr); }
+.research-project .maritime-plot-pair a { aspect-ratio: 11 / 9; }
+.research-project .maritime-plot-pair figure:last-child a { aspect-ratio: 1483 / 872; }
+.research-project .us-mcs-figures { width: 52%; }
+.us-mcs-description h3:not(:first-child) { margin-top: 24px; }
+.research-project .project-wide-figure { margin: 24px 0; }
+.project-papers { margin-top: 24px; }
+.project-papers h3 { margin: 0 0 9px; color: var(--heading); font-size: 14px; font-weight: 600; }
+.project-papers ul { margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.75; }
+.project-papers li + li { margin-top: 9px; }
 .publication-list { margin: 0; font-size: 15px; line-height: 1.85; }
 .publication-list li { padding-left: 5px; margin-bottom: 24px; }
 .plain-list li { margin-bottom: 12px; }
-.home-contact { margin-top: 28px; font-size: 15px; }
 .home-wrapper { max-width: 1040px; }
 .home-layout { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 56px; padding-top: 42px; }
 .profile { min-width: 0; }
@@ -68,6 +97,11 @@ footer { display: flex; flex-wrap: wrap; gap: 10px 24px; margin-top: 65px; paddi
 @media (max-width: 800px) {
   .home-layout { grid-template-columns: 190px minmax(0, 1fr); gap: 30px; }
   .bio-list li { grid-template-columns: 1fr; gap: 3px; }
+  .research-project .figure-inset { width: 46%; }
+  .research-project .figure-inset-right { margin-left: 26px; }
+  .research-project .figure-inset-left { margin-right: 26px; }
+  .research-project .us-mcs-figures { float: none; width: 100%; max-width: 620px; margin: 0 auto 26px; }
+  .research-project .maritime-figures { float: none; width: 100%; max-width: 620px; margin: 0 auto 26px; }
 }
 @media (max-width: 700px) {
   .home-layout { grid-template-columns: 1fr; gap: 34px; padding-top: 32px; }
@@ -84,8 +118,16 @@ footer { display: flex; flex-wrap: wrap; gap: 10px 24px; margin-top: 65px; paddi
   main { padding-top: 26px; }
   h1 { font-size: 30px; margin-bottom: 24px; }
   .publication-list { font-size: 14px; }
+  .research-intro { margin-bottom: 32px; }
+  .research-project h2 { font-size: 21px; }
+  .research-project .figure-inset { float: none; width: 100%; margin: 0 0 24px; }
+  .research-project + .research-project { margin-top: 32px; padding-top: 32px; }
   footer { margin-top: 48px; }
 }
 @media (max-width: 380px) {
   nav { column-gap: 14px; }
+}
+@media (max-width: 480px) {
+  .us-mcs-figures .figure-pair { grid-template-columns: 1fr; gap: 22px; }
+  .maritime-plot-pair { grid-template-columns: 1fr; gap: 22px; }
 }
