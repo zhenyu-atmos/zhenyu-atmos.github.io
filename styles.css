@@ -75,6 +75,7 @@ ul, ol { padding-left: 24px; }
 .research-project .figure-pair img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: center top; }
 .research-project .maritime-figures { width: 52%; }
 .maritime-plot-pair { grid-template-columns: minmax(0, 1.222222fr) minmax(0, 1.700688fr); }
+.research-project > .maritime-plot-pair { margin: 24px 0; }
 .research-project .maritime-plot-pair a { aspect-ratio: 11 / 9; }
 .research-project .maritime-plot-pair figure:last-child a { aspect-ratio: 1483 / 872; }
 .research-project .us-mcs-figures { width: 52%; }
