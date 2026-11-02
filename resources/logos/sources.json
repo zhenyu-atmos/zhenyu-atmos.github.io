@@ -1,0 +1,126 @@
+{
+  "agc": {
+    "file": "agc.webp",
+    "source": "https://agc.atmos.uw.edu/book_cover.png"
+  },
+  "bom-icon": {
+    "file": "bom-icon.png",
+    "source": "https://www.bom.gov.au/favicon.ico"
+  },
+  "ccrs": {
+    "file": "ccrs.png",
+    "source": "https://ccrs.weather.gov.sg/wp-content/themes/ccrstheme/assets/img/mss-ccrs-logo.png"
+  },
+  "cds": {
+    "file": "cds.png",
+    "source": "https://cds.climate.copernicus.eu/_next/static/media/logo.b0e67523.png"
+  },
+  "cira": {
+    "file": "cira.png",
+    "source": "https://satlib.cira.colostate.edu/wp-content/uploads/sites/23/2026/03/cropped-CIRA_sml_badge-192x192.png"
+  },
+  "climate-reanalyzer": {
+    "file": "climate-reanalyzer.png",
+    "source": "https://climatereanalyzer.org/logos/favicon-cr.png"
+  },
+  "copernicus": {
+    "file": "copernicus.png",
+    "source": "https://climate.copernicus.eu/themes/custom/copernicus/apple-touch-icon.png"
+  },
+  "csu": {
+    "file": "csu.svg",
+    "source": "https://www.engr.colostate.edu/images/csu-logo-oneline.svg"
+  },
+  "ecmwf": {
+    "file": "ecmwf.svg",
+    "source": "https://www.ecmwf.int/themes/ecmwf/logo.svg"
+  },
+  "era-explorer": {
+    "file": "era-explorer.png",
+    "source": "https://era-explorer.climate.copernicus.eu/icons/favicon-128x128.png"
+  },
+  "esa": {
+    "file": "esa.svg",
+    "source": "https://www.esa.int/extension/pillars/design/pillars/images/ESA_Logo.svg"
+  },
+  "github": {
+    "file": "github.png",
+    "source": "https://github.githubassets.com/favicons/favicon.png"
+  },
+  "google-sites": {
+    "file": "google-sites.png",
+    "source": "https://www.gstatic.com/images/branding/productlogos/sites_2026/v3/ico/sites_2026_16dp.ico"
+  },
+  "isca": {
+    "file": "isca.png",
+    "source": "https://execlim.github.io/IscaWebsite/icons/Iscalogo_thumb.png"
+  },
+  "marshall-plumb": {
+    "file": "marshall-plumb.png",
+    "source": "https://marshallplumb.mit.edu/wp-content/uploads/2017/06/cropped-cleartome90-192x192.png"
+  },
+  "met-office": {
+    "file": "met-office.png",
+    "source": "https://www.metoffice.gov.uk/favicon.png"
+  },
+  "mpas": {
+    "file": "mpas.png",
+    "source": "https://www2.mmm.ucar.edu/projects/mpas/tutorial/Virtual2025/images/logo.png"
+  },
+  "mss": {
+    "file": "mss.png",
+    "source": "https://www.weather.gov.sg/wp-content/themes/wiptheme/assets/img/mss-logo.png"
+  },
+  "nasa": {
+    "file": "nasa.png",
+    "source": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
+  },
+  "ncar": {
+    "file": "ncar.png",
+    "source": "https://ncar.github.io/CESM-Tutorial/_static/ncar_logo.png"
+  },
+  "ncics": {
+    "file": "ncics.png",
+    "source": "https://ncics.org/wp-content/uploads/2016/05/cropped-NCICS_Logo_512-192x192.png"
+  },
+  "noaa": {
+    "file": "noaa.svg",
+    "source": "https://psl.noaa.gov/img/logos/noaa-logo.svg"
+  },
+  "nullschool": {
+    "file": "nullschool.png",
+    "source": "https://earth.nullschool.net/apple-touch-icon-180x180.png"
+  },
+  "reading": {
+    "file": "reading.png",
+    "source": "https://www.reading.ac.uk/homepage/web/multimediafiles/legacy-touch-icon-ipad-retina.png"
+  },
+  "sg-v3": {
+    "file": "sg-v3.png",
+    "source": "https://www.mss-int.sg/api/media/assets/public/v3_favicon.ico"
+  },
+  "tc-atlas": {
+    "file": "tc-atlas.png",
+    "source": "https://tcatlas.org/tc-atlas-favicon-192.png?v=20261009p1a"
+  },
+  "tropical-tidbits": {
+    "file": "tropical-tidbits.png",
+    "source": "https://www.tropicaltidbits.com/images/app-icons/ios/ios-appicon-180-180.png"
+  },
+  "watch-duty": {
+    "file": "watch-duty.png",
+    "source": "https://app.watchduty.org/logo192.png"
+  },
+  "weathernerds": {
+    "file": "weathernerds.png",
+    "source": "https://www.weathernerds.org/gfs_favicon.ico"
+  },
+  "wrf": {
+    "file": "wrf.jpg",
+    "source": "https://www2.mmm.ucar.edu/wrf/users/images/wrf_logo.jpg"
+  },
+  "wrf-domains": {
+    "file": "wrf-domains.png",
+    "source": "https://jiririchter.github.io/WRFDomainWizard/build/img/globe_32x32.png"
+  }
+}
