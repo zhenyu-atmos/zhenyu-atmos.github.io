@@ -87,7 +87,6 @@ ul, ol { padding-left: 24px; }
 .project-papers li + li { margin-top: 9px; }
 .publication-list { margin: 0; padding: 0; list-style: none; font-size: 15px; line-height: 1.85; }
 .publication-list li { margin-bottom: 24px; }
-.publication-list a, .project-papers a { color: inherit; }
 a[href$=".pdf"] { color: var(--link); }
 .publication-year { color: var(--link); }
 .publication-list .paper-title { font-weight: 700; }
